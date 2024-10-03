@@ -1,0 +1,45 @@
+name: Primeiro Workflow 
+
+on:
+  push:
+    branches:
+      - developer
+      - main
+      - master
+  pull_request:
+    branches: [main, master]
+    
+
+jobs:
+  Primeiro-Fluxo:
+    name: Job 1 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Passo 1
+        run: echo "Executando o primeiro passo."
+      - name: Passo 2
+        run: echo "Executando o segundo passo."
+      - name: Passo 3
+        run: echo "Executando o terceiro passo."
+  
+  Segundo-Fluxo:
+    name: Job 2 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Passo 4
+        run: echo "Executando o primeiro passo."
+      - name: Passo 5
+        run: echo "Executando o segundo passo."
+      - name: Passo 6
+        run: echo "Executando o terceiro passo."
+  
+  Terceiro-Fluxo:
+    name: Job 3 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Passo 7
+        run: echo "Executando o primeiro passo."
+      - name: Passo 8
+        run: echo "Executando o segundo passo."
+      - name: Passo 3
+        run: echo "Executando o terceiro passo."
